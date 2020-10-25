@@ -19,6 +19,13 @@ program
     api.clear()
   });
 
+program
+  .command('show')
+  .description('show all task')
+  .action(()=>{
+    api.showAll()
+  });
+
 program.parse(process.argv);
 
 

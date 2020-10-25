@@ -22,8 +22,8 @@ const db = {
     })
   },
   write(content,path = dbPath,) {
-    const string = JSON.stringify(content)
     return new Promise((resolve, reject)=>{
+      const string = JSON.stringify(content)
       fs.writeFile(path,string,(error)=>{
         if(error) return reject()
       })

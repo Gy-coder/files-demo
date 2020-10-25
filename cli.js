@@ -12,7 +12,12 @@ program
     const words = args.slice(1).join('')
     api.add(words)
   });
-
+program
+  .command('clear')
+  .description('clear a task')
+  .action(()=>{
+    api.clear()
+  });
 
 program.parse(process.argv);
 

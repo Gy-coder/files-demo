@@ -1,3 +1,5 @@
+#!/usr/local/bin/node
+
 const program = require('commander')
 const api = require('./index')
 
